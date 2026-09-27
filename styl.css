@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px 20px;
+}
+
+.card {
+    width: 100%;
+    max-width: 420px;
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+}
+
+.card h1 {
+    font-size: 1.5rem;
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* ===== To-Do List ===== */
+.todo-list {
+    list-style: none;
+}
+
+.todo-list > li {
+    background: #f7f5fb;
+    border-radius: 10px;
+    padding: 12px 14px;
+    margin-bottom: 12px;
+    transition: background 0.2s;
+}
+
+.todo-list > li:hover {
+    background: #efeaf7;
+}
+
+.todo-list input[type="checkbox"] {
+    margin-right: 8px;
+    transform: scale(1.15);
+    accent-color: #764ba2;
+    cursor: pointer;
+}
+
+.todo-list label {
+    font-weight: 600;
+    color: #333;
+    cursor: pointer;
+}
+
+/* ===== Sub-item ===== */
+.sub-item {
+    list-style: none;
+    margin-top: 10px;
+    margin-left: 26px;
+    padding-left: 12px;
+    border-left: 3px solid #764ba2;
+}
+
+.sub-item li {
+    margin: 6px 0;
+}
+
+/* Test 14 - hilangkan text-decoration */
+.sub-item-link {
+    text-decoration: none;
+    font-size: 0.95rem;
+    padding: 2px 4px;
+    border-radius: 4px;
+    transition: color 0.2s, background 0.2s;
+}
+
+/* Test 15 - warna link belum dikunjungi */
+.sub-item-link:link {
+    color: #2e5e4e;
+}
+
+/* Test 16 - warna saat hover */
+.sub-item-link:hover {
+    color: #ffffff;
+    background-color: #764ba2;
+}
+
+/* Test 17 - warna saat diklik (active) */
+.sub-item-link:active {
+    color: #ffe066;
+    background-color: #3a1f5c;
+}
+
+/* Test 18 - outline saat fokus */
+.sub-item-link:focus {
+    outline: 3px solid #ffb703;
+    outline-offset: 2px;
+}
+
+/* Test 19 - warna setelah dikunjungi */
+.sub-item-link:visited {
+    color: #8e44ad;
+}
